@@ -1490,7 +1490,7 @@ body.tt-smooth-scroll.tt-ol-menu-open .scrollbar-track {
 .tt-ol-menu-list > li > .tt-ol-submenu-trigger > a {
 	position: relative;
 	display: inline-block;
-	font-size: clamp(34px, 4vw, 68px);
+	font-size: clamp(24px, 2vw, 68px);
 	font-weight: bold;
 	font-weight: 700;
 	line-height: 1.2;
