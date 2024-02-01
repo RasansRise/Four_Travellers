@@ -154,7 +154,7 @@ ul.tt-list > li {
 .cover-opacity-2-5::before { opacity: .25; }
 .cover-opacity-3::before { opacity: .3; }
 .cover-opacity-3-5::before { opacity: .35; }
-.cover-opacity-4::before { opacity: .4; }
+.cover-opacity-4::before { opacity: .5; }
 .cover-opacity-4-5::before { opacity: .45; }
 .cover-opacity-5::before { opacity: .5; }
 .cover-opacity-5-5::before { opacity: .55; }
