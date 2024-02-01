@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 
-<!--
-	Template:   Nui - Creative Portfolio Showcase HTML Website Template
-	Author:     Themetorium
-	URL:        https://themetorium.net/
--->
-
 <html lang="en">
 	<head>
 
@@ -19,10 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Favicon (http://www.favicon-generator.org/) -->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-		<!-- Your Google Analytics code goes here -->
+		<link rel="shortcut icon" href="assets/img/Logo-03.png" type="image/x-icon">
 
 		<!-- Google fonts (https://www.google.com/fonts) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,10 +46,33 @@
 				transform: translateY(-50%);
 				text-align: right;
 			}
+			.arabic-content ul li{
+				padding:10px 0;
+			}
+			.arabic-content ul li a{
+				font-weight: 300;
+				position: relative;
+				transition:0.3s;
+			}
+			.arabic-content ul li a::after{
+				content:"";
+				position: absolute;
+				width: 0;
+				height: 2px;
+				background-color: white;
+				right:0;
+				bottom:0;
+				transition: 0.3s;
+			}
+			.arabic-content ul li a:hover::after{
+				width: 100%;
+			}
+			.arabic-content ul li a:hover{
+				font-weight: 700;
+			}
 			@media(max-width:600px){
 				.arabic-content{
 					top:33%;
-
 				}
 			}
 			.tt-portfolio-slider .arabic-content p{
@@ -156,7 +170,7 @@
 							* Use class "tt-ol-menu-count" to enable menu counter.
 							-->
 							<nav class="tt-overlay-menu tt-ol-menu-count">
-								<div class="tt-ol-menu-ghost">Explore</div>
+								<div class="tt-ol-menu-ghost">استكشف</div>
 								<div class="tt-ol-menu-holder">
 									<div class="tt-ol-menu-inner tt-wrap">
 										<div class="tt-ol-menu-content">

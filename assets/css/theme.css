@@ -1390,7 +1390,7 @@ body:not(.tt-boxed) .tt-header-inner,
 	position: absolute;
 	left: 3%;
 	bottom: 5%;
-	font-size: 23.5vw;
+	font-size: 20.5vw;
 	font-weight: bold;
 	font-weight: 600;
 	color: #FFF;
@@ -10218,7 +10218,7 @@ body.tt-np-image-on .tt-next-project.tt-np-image-is-light .tt-np-subtitle {
 
 .tt-style-switch {
 	position: fixed;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	top: 30%;
