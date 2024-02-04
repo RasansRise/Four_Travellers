@@ -4767,20 +4767,7 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 .portfolio-split-list {
 	counter-reset: pspl-item-counter;
 }
-.pspl-item-title-link::before {
-	position: absolute;
-	counter-increment: pspl-item-counter;
-	content: "" counter(pspl-item-counter, decimal-leading-zero);
-	top: 10px;
-	right: -20px;
-	line-height: 1;
-	font-size: calc(12px + 0.2vw);
-	font-weight: 300;
-	color: #FFF;
-	opacity: .5;
-	z-index: 2;
-	transition: opacity .3s;
-}
+
 @media (max-width: 1024px) {
 	.pspl-item-title-link::before {
 		right: 0;
@@ -4793,7 +4780,7 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 	display: block;
 	margin: 0;
 	padding: 0;
-	font-size: clamp(32px, 3vw, 54px);
+	font-size: clamp(32px, 2vw, 54px);
 	font-weight: bold;
 	font-weight: 600;
 	color: #EEE;

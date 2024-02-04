@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 	<head>
 
@@ -28,57 +27,6 @@
 		<!-- Template master CSS -->
 		<link rel="stylesheet" href="assets/css/helper.css">
 		<link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
-		<style>
-			ul{
-				list-style-type: none;
-			}
-			.tt-portfolio-slider{
-				position: relative;
-			}
-			.arabic-content{
-				position: absolute;
-				z-index: 2;
-				top: 60%;
-				right: 0;
-				width: auto;
-				max-width: 500px;
-				margin: 0px 15% 0 2%;
-				transform: translateY(-50%);
-				text-align: right;
-			}
-			.arabic-content ul li{
-				padding:10px 0;
-			}
-			.arabic-content ul li a{
-				font-weight: 300;
-				position: relative;
-				transition:0.3s;
-			}
-			.arabic-content ul li a::after{
-				content:"";
-				position: absolute;
-				width: 0;
-				height: 2px;
-				background-color: white;
-				right:0;
-				bottom:0;
-				transition: 0.3s;
-			}
-			.arabic-content ul li a:hover::after{
-				width: 100%;
-			}
-			.arabic-content ul li a:hover{
-				color:orange;
-			}
-			@media(max-width:600px){
-				.arabic-content{
-					top:33%;
-				}
-			}
-			.tt-portfolio-slider .arabic-content p{
-				font-size: 40px;
-			}
-		</style>
 	</head>
 
 	
@@ -99,7 +47,6 @@
 		************************************** -->
 		<main id="body-inner">
 
-
 			<!-- Begin page transition (do not remove!!!) 
 			=========================== -->
 			<div id="page-transition">
@@ -107,7 +54,7 @@
 				<div class="ptr-preloader">
 					<div class="ptr-prel-content">
 						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-						<img src="assets/img/Logo-03.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+						<img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
 					</div> <!-- /.ptr-prel-content -->
 				</div> <!-- /.ptr-preloader -->
 			</div>
@@ -118,13 +65,13 @@
 			<div id="magic-cursor">
 				<div id="ball"></div>
 			</div>
-			<!-- End magic cursor -->
+			<!-- End magic cursor --> 
 
 
 			<!-- *****************************************
 			*********** Begin scroll container *********** 
 			****************************************** -->
-			<div id="scroll-container">
+			<div id="scroll-container"> 
 				
 				<!-- ===================
 				///// Begin header /////
@@ -249,205 +196,233 @@
 					*********** Begin page content *********** 
 					************************************** -->
 					<div id="page-content">
-						
 
-						<!-- ==================================================
-						///// Begin portfolio slider (full screen slider) /////
-						=======================================================
-						* NOTE: The Portfolio slider is a standalone element. Do not add other elements to this page!!!
-						* Use class "cursor-drag-mouse-down" to enable cursor drag style on mouse down ("data-simulate-touch" attribute must be enabled!).
-						* Available data attributes:
-								data-speed="900"......................(milliseconds)
-								data-autoplay="5000"..................(milliseconds. Note: disabled after user first interactions)
-								data-mousewheel="true"................(true/false)
-								data-keyboard="true"..................(true/false)
-								data-simulate-touch="true"............(true/false)
-								data-grab-cursor="true"...............(true/false)
-								data-pagination-type="fraction".......(bullets/fraction/progressbar)
-								data-parallax-mouse-move="true".......(true/false)
+
+						<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
-						<div class="tt-portfolio-slider cursor-drag-mouse-down" data-speed="1000" data-mousewheel="true" data-keyboard="true" data-simulate-touch="true" data-grab-cursor="true" data-pagination-type="progressbar">
-							<div class="arabic-content">
-								<b>بنقدم لك تجربة شاملة عشان تستمتع بالسفر لكل الأماكن اللي نفسك تروحها</b>
-								<ul>
-									<li><a href="">رحلات خارج/داخل مصر</a></li>
-									<li><a href="">استخراج تأشيرات
-									</a></li>
-									<li><a href="">حجز تذاكر طيران
-									</a></li>
-									<li><a href="">حجز فنادق
-									</a></li>
-								</ul>
-							</div>
-							<!-- Begin swiper container -->
-							<div class="swiper">
-								
-								<!-- Begin swiper wrapper (required) -->
-								<div class="swiper-wrapper">
-									
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-1.html" data-title="Lebanon" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/lebanon.jpg" data-src="assets/img/lebanon.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										
-									</div> 
-									<!-- End swiper slide -->
+						<div class="tt-section no-padding">
+							<div class="tt-section-inner">
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-2.html" data-title="Siwa" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Siwa.jpg" data-src="assets/img/Siwa.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-									</div> 
-									<!-- End swiper slide -->
+								<!-- Begin portfolio split
+								=========================== 
+								* NOTE: The portfolio split is a standalone element. Do not add other elements to this page!!!
+								* Use class "pspl-reverse" to enable reversed layout.
+								-->
+								<div class="portfolio-split pspl-reverse">
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-3.html" data-title="Sri Lanka" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<!-- <div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<video class="tt-bg-video" loop muted preload="metadata" poster="assets/vids/fashion-shoot.jpg">
-												<source src="assets/vids/fashion-shoot.mp4" type="video/mp4">
-												<source src="assets/vids/fashion-shoot.webm" type="video/webm">
-											</video>
-										</div> /.tt-portfolio-slider-item -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Seri Lanka.jpg" data-src="assets/img/Seri Lanka.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										
-									</div> 
-									<!-- End swiper slide -->
+									<!-- Begin portfolio split images 
+									================================== -->
+									<div class="portfolio-split-images">
+										<div class="pspl-images-inner">
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-4.html" data-title="Azerbaijan" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Azebergan.jpg" data-src="assets/img/Azebergan.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										<!-- <div class="arabic-content">
-											<h4>عنوان</h4>
-											<p>لوريم ابسوم</p>
-										</div> -->
-									</div> 
-									<!-- End swiper slide -->
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item1 active">
+												<img src="assets/img/Siwa.jpg" alt="image">
+											</div>
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-5.html" data-title="Zanzibar" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Zanzibar.jpg" data-src="assets/img/Zanzibar.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										<!-- <div class="arabic-content">
-											<h4>عنوان</h4>
-											<p>لوريم ابسوم</p>
-										</div> -->
-									</div> 
-									<!-- End swiper slide -->
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item2">
+												<img src="assets/img/lebanon.jpg" alt="image">
+											</div>
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-6.html" data-title="Bali" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Bali.jpg" data-src="assets/img/Bali.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										<!-- <div class="arabic-content">
-											<h4>عنوان</h4>
-											<p>لوريم ابسوم</p>
-										</div> -->
-									</div> 
-									<!-- End swiper slide -->
+											<!-- Add class "pspl-image-is-light" if you use a very light image
+											<div class="pspl-image">
+												<video class="pspl-video" loop muted preload="metadata" poster="assets/vids/fashion-shoot.jpg">
+													<source src="assets/vids/fashion-shoot.mp4" type="video/mp4">
+													<source src="assets/vids/fashion-shoot.webm" type="video/webm">
+												</video>
+											</div> -->
 
-									<!-- Begin swiper slide 
-									======================== 
-									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
-									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
-									-->
-									<div class="swiper-slide" data-url="single-project-7.html" data-title="Malezya" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Malyzia.jpg" data-src="assets/img/Malyzia.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										<!-- <div class="arabic-content">
-											<h4>عنوان</h4>
-											<p>لوريم ابسوم</p>
-										</div> -->
-									</div> 
-									<!-- End swiper slide -->
-									<!-- Begin swiper slide-->
-									<div class="swiper-slide" data-url="single-project-9.html" data-title="Thailand" data-category="">
-										<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-										<div class="tt-portfolio-slider-item cover-opacity-4" data-swiper-parallax="50%">
-											<img class="tt-psi-image swiper-lazy" src="assets/img/Thailand.jpg" data-src="assets/img/Thailand.jpg" alt="Image">
-										</div> <!-- /.tt-portfolio-slider-item -->
-										<!-- <div class="arabic-content">
-											<h4>عنوان</h4>
-											<p>لوريم ابسوم</p>
-										</div> -->
-									</div> 
-									
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item3">
+												<img src="assets/img/Seri Lanka.jpg" alt="image">
+											</div>
+
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item4">
+												<img src="assets/img/Azebergan.jpg" alt="image">
+											</div>
+
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item5">
+												<img src="assets/img/Thailand.jpg" alt="image">
+											</div>
+
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item6">
+												<img src="assets/img/Zanzibar.jpg" alt="image">
+											</div>
+
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item7">
+												<img src="assets/img/Bali.jpg" alt="image">
+											</div>
+
+											<!-- Add class "pspl-image-is-light" if you use a very light image -->
+											<div class="pspl-image item8">
+												<img src="assets/img/Malyzia.jpg" alt="image">
+											</div>
+
+										</div> <!-- /.pspl-images-inner -->
+									</div>
+									<!-- End portfolio split images -->
+
+									<!-- Begin portfolio split list 
+									================================ -->
+									<div class="portfolio-split-list skew-on-scroll">
+										<div class="pspl-inner">
+
+											<div class="pspl-ghost">Portfolio</div>
+
+											<!-- Begin portfolio split item 
+											================================ -->
+											
+											<!-- End portfolio split item -->
+
+											<!-- Begin portfolio split item 
+											================================ -->
+											<ul class="tt-ol-menu-list ">
+												<!-- Begin submenu (submenu master)
+												==================================== -->
+												<li class="portfolio-split-item tt-ol-submenu-wrap">
+													<div class="tt-ol-submenu-trigger">
+														<a class="pspl-item-title-link"  hover="item1" href="#">رحلات داخل مصر  
+														</a>
+														<div class="tt-ol-submenu-caret-wrap">
+															<div class="tt-ol-submenu-caret magnetic-item"></div>
+														</div> <!-- /.tt-ol-submenu-caret-wrap -->
+													</div> <!-- /.tt-ol-submenu-trigger -->
+													<div class="tt-ol-submenu">
+														<ul class="tt-ol-submenu-list">
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link" hover="item1">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">سيوه</h2>
+																		<div class="pspl-item-hover-title">Siwa</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															
+
+														</ul> <!-- /.tt-ol-submenu-list -->
+													</div> <!-- /.tt-ol-submenu -->
+												</li>
+												<!-- End submenu (sub-master) -->
+												<!-- Begin submenu (submenu master)
+												==================================== -->
+												<li class="portfolio-split-item tt-ol-submenu-wrap">
+													<div class="tt-ol-submenu-trigger">
+														<a class="pspl-item-title-link"  hover="item2" href="#">رحلات خارج مصر  
+														</a>
+														<div class="tt-ol-submenu-caret-wrap">
+															<div class="tt-ol-submenu-caret magnetic-item"></div>
+														</div> <!-- /.tt-ol-submenu-caret-wrap -->
+													</div> <!-- /.tt-ol-submenu-trigger -->
+													<div class="tt-ol-submenu">
+														<ul class="tt-ol-submenu-list">
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item2">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">لبنان</h2>
+																		<div class="pspl-item-hover-title">Lebanon</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item3">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">سيرلانكا</h2>
+																		<div class="pspl-item-hover-title">Seri Lanka</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item4">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">أذربيجان</h2>
+																		<div class="pspl-item-hover-title">Azerbaijan</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item5">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">تايلاند</h2>
+																		<div class="pspl-item-hover-title">Thailand</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+
+														</ul> <!-- /.tt-ol-submenu-list -->
+													</div> <!-- /.tt-ol-submenu -->
+												</li>
+												<!-- End submenu (sub-master) -->
+												<!-- Begin submenu (submenu master)
+												==================================== -->
+												<li class="portfolio-split-item tt-ol-submenu-wrap">
+													<div  class="tt-ol-submenu-trigger">
+														<a class="pspl-item-title-link"  hover="item6" href="#">رحلات شهر العسل 
+														</a>
+														<div class="tt-ol-submenu-caret-wrap">
+															<div class="tt-ol-submenu-caret magnetic-item"></div>
+														</div> <!-- /.tt-ol-submenu-caret-wrap -->
+													</div> <!-- /.tt-ol-submenu-trigger -->
+													<div class="tt-ol-submenu">
+														<ul class="tt-ol-submenu-list">
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item6">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">زانزيبار</h2>
+																		<div class="pspl-item-hover-title">Zanzibar</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item7">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">بالي </h2>
+																		<div class="pspl-item-hover-title">Bali</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+															<div class="portfolio-split-item">
+																<a href="" class="pspl-item-title-link"  hover="item8">
+																	<div class="pspl-item-title-link-inner">
+																		<h2 class="pspl-item-title">ماليزيا</h2>
+																		<div class="pspl-item-hover-title">Malezya</div>
+																	</div>
+																	
+																</a> <!-- /.pspl-item-title-link -->
+															</div>
+
+														</ul> <!-- /.tt-ol-submenu-list -->
+													</div> <!-- /.tt-ol-submenu -->
+												</li>
+												<!-- End submenu (sub-master) -->
+											</ul>
+											
+
+										</div> <!-- /.pspl-inner -->
+									</div>
+									<!-- End portfolio split list -->
 
 								</div>
-								<!-- End swiper wrapper -->
+								<!-- End portfolio split -->
 
-							</div>
-							<!-- End swiper container -->
-							
-
-							<!-- Begin portfolio slider caption
-							==================================== 
-							* Use class "psc-center" to align caption.
-							* Use class "psc-stroke" to enable caption title stroke style.
-							* Note: Titles and URLs are loaded from "swiper-slide" data attributes. Do not change them here!!!
-							-->
-							<div class="tt-portfolio-slider-caption">
-								<div class="tt-ps-caption-inner">
-									<div class="tt-psc-elem tt-ps-caption-category"></div>
-									<h2 class="tt-psc-elem tt-ps-caption-title"><a href="" data-cursor="View<br>Project"></a></h2>
-								</div> <!-- /.tt-ps-caption-inner -->
-							</div>
-							<!-- End portfolio slider caption -->
-
-							<!-- Begin portfolio slider navigation 
-							======================================= -->
-							<div class="tt-portfolio-slider-navigation tt-swiper-nav">
-								<div class="tt-ps-nav-prev">
-									<div class="tt-ps-nav-arrow tt-ps-nav-arrow-prev magnetic-item"><i class="tt-arrow-left"></i></div>
-								</div>
-								<div class="tt-ps-nav-next">
-									<div class="tt-ps-nav-arrow tt-ps-nav-arrow-next magnetic-item"><i class="tt-arrow-right"></i></div>
-								</div>
-								<div class="tt-ps-nav-pagination"></div>
-							</div>
-							<!-- End portfolio slider navigation -->
-
+							</div> <!-- /.tt-section-inner -->
 						</div>
-						<!-- End portfolio slider -->
+						<!-- End tt-section -->
+
 
 					</div>
 					<!-- End page content -->
@@ -511,7 +486,6 @@
 		<!-- End body inner -->
 
 
-
         
 
 		<!-- ====================
@@ -538,7 +512,18 @@
 		<script src="assets/js/theme.js"></script>
 
 
-
+		<script>
+			let psplLink = document.querySelectorAll('a.pspl-item-title-link');
+			psplLink.forEach((link)=>{
+				link.addEventListener('mouseenter',function(){
+					let item = link.getAttribute('hover');
+					let activeImage = document.querySelector('.pspl-image.active');
+					activeImage.classList.remove('active');
+					document.querySelector(`.pspl-image.${item}`).classList.add('active');
+					console.log();
+				})
+			})
+		</script>
 	</body>
 
 </html>
