@@ -4750,10 +4750,11 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 /* Portfolio split item link */
 .pspl-item-title-link {
 	position: relative;
+	width: 100%;
 	display: inline-grid;
 	align-items: center;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 0px;
+    padding-bottom: 10px;
 	text-decoration: none;
 }
 
@@ -4780,7 +4781,7 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 	display: block;
 	margin: 0;
 	padding: 0;
-	font-size: clamp(32px, 2vw, 54px);
+	font-size: 19px;
 	font-weight: bold;
 	font-weight: 600;
 	color: #EEE;
