@@ -108,7 +108,10 @@ body {
 	color: #FFF;
 	overflow-x: hidden;
 }
-
+.arabic{
+	direction: rtl;
+	text-align: right;
+}
 p { 
 	margin: 0 0 30px; 
 }
@@ -2043,6 +2046,8 @@ body:not(.tt-boxed) .page-header-inner,
 ======================= */
 .ph-caption {
 	position: relative;
+	text-align: right;
+	max-width:100% !important;
 }
 
 /* page header caption title */
@@ -9157,6 +9162,7 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 
 /* blog single post content */
 .tt-blog-post-content {
+	text-align: right;
 }
 
 .tt-blog-post-content p {
