@@ -9158,6 +9158,8 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 ==================== */
 .tt-blog-post {
 	position: relative;
+	direction: rtl;
+
 }
 
 /* blog single post content */
