@@ -31,6 +31,7 @@
 		<style>
 			ul{
 				list-style-type: none;
+				padding:0;
 			}
 			.tt-portfolio-slider{
 				position: relative;
@@ -45,16 +46,17 @@
 				margin: 0px 15% 0 2%;
 				transform: translateY(-50%);
 				text-align: right;
+				direction: rtl;
 			}
-			.arabic-content ul li{
+			.arabic-content ul li {
+				width: fit-content;
 				padding:5px 0;
-			}
-			.arabic-content ul li a{
+
 				font-weight: 300;
 				position: relative;
 				transition:0.3s;
 			}
-			.arabic-content ul li a::after{
+			.arabic-content ul li::after{
 				content:"";
 				position: absolute;
 				width: 0;
@@ -64,10 +66,10 @@
 				bottom:0;
 				transition: 0.3s;
 			}
-			.arabic-content ul li a:hover::after{
+			.arabic-content ul li:hover::after{
 				width: 100%;
 			}
-			.arabic-content ul li a:hover{
+			.arabic-content ul li:hover{
 				color:orange;
 			}
 			@media(max-width:600px){
@@ -269,13 +271,13 @@
 							<div class="arabic-content">
 								<b>بنقدم لك تجربة شاملة عشان تستمتع بالسفر لكل الأماكن اللي نفسك تروحها</b>
 								<ul>
-									<li><a href="">رحلات خارج/داخل مصر</a></li>
-									<li><a href="">استخراج تأشيرات
-									</a></li>
-									<li><a href="">حجز تذاكر طيران
-									</a></li>
-									<li><a href="">حجز فنادق
-									</a></li>
+									<li>رحلات خارج/داخل مصر	</li>
+									<li>استخراج تأشيرات
+									</li>
+									<li>حجز تذاكر طيران
+									</li>
+									<li>حجز فنادق
+									</li>
 								</ul>
 							</div>
 							<!-- Begin swiper container -->
@@ -426,8 +428,7 @@
 							-->
 							<div class="tt-portfolio-slider-caption">
 								<div class="tt-ps-caption-inner">
-									<div class="tt-psc-elem tt-ps-caption-category"></div>
-									<h2 class="tt-psc-elem tt-ps-caption-title"><a href="" data-cursor="View<br>Project"></a></h2>
+									<h2 class="tt-psc-elem tt-ps-caption-title"></h2>
 								</div> <!-- /.tt-ps-caption-inner -->
 							</div>
 							<!-- End portfolio slider caption -->
