@@ -6615,6 +6615,7 @@ body:not(.tt-np-image-on) .tt-np-ghost {
 /* ------------------------------------------------------------- */
 
 .tt-image {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -9164,7 +9165,7 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 
 /* blog single post content */
 .tt-blog-post-content {
-	text-align: right;
+	text-align: justify;
 }
 
 .tt-blog-post-content p {

@@ -326,12 +326,20 @@
 							=============================== 
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
-              <div class="ph-caption max-width-1000">
-                <h1 class="ph-caption-title">
-                  <div class="ph-appear">حكاوي السفر</div>
-                  <!-- You can use <br> to break a text line if needed -->
-                </h1>
-              </div>
+				<div class="ph-caption max-width-1000">
+					
+					<h1 class="ph-caption-title">
+						<div class="ph-appear">إزاى تسافر لوحدك تمامًا</div> <!-- You can use <br> to break a text line if needed -->
+					</h1>
+					<div class="ph-caption-title-ghost">
+						<div class="ph-appear"></div>
+					</div>
+					<div class="ph-meta">
+						<div class="ph-appear">
+							<span class="ph-meta-published">الجزء الأول</span>
+						</div>
+					</div> <!-- /.ph-meta -->
+				</div>
               <!-- End page header caption -->
             </div>
             <!-- /.page-header-inner -->
@@ -371,15 +379,15 @@
                   <!-- Begin blog post content -->
                   <div class="tt-blog-post-content">
                     <p class="text-xlg">
-                      إزاى تسافر لوحدك تمامًا - الجزء الأول - 50 دولة تقدر
-                      تسافرهم بالباسبور بس! لو مسافرتش برا مصر قبل كدة ونفسك
-                      تاخد الخطوة دي وعايز تعرف تبدأ إزاى، يبقى السلسلة دي مهمة
-                      جدًا ليك. لأنك هنا هتعرف كل حاجة تخص السفر برا مصر، اختيار
-                      البلد، يعنى إيه تأشيرة وإزاى تحسب تكاليف السفرية، وأخيرًا
-                      إزاى تعمل برنامج فالبلد اللى هتسافرها.
+						<b>تعرف انك تقدر تسافر 50 دوله بالباسبور بس !</b>						
                     </p>
 
                     <p>
+						لو مسافرتش برا مصر قبل كدة ونفسك
+                      تاخد الخطوة دي وعايز تعرف تبدأ إزاى، يبقى السلسلة دي مهمة
+                      جدًا ليك. لأنك هنا هتعرف كل حاجة تخص السفر برا مصر، اختيار
+                      البلد، يعنى إيه تأشيرة وإزاى تحسب تكاليف السفرية، وأخيرًا
+                      إزاى تعمل برنامج فالبلد اللى هتسافرها
                       كل ده هتعرفه وهتقدر تعمله بسهولة ولوحدك تمامًا، بعيد عن أى
                       شركات سياحة.
                     </p>
@@ -404,26 +412,32 @@
                       تختار البلد كويس وتقرأ عنها كتير على جوجل، وكمان حط اسم
                       البلد عاليوتيوب هتلاقى ڤيديوهات كتير بتتكلم عن البلد
                       وبتشرحلك كل حاجة فيها، يعنى احنا مثلًا عملنا ڤيديو عن
-                      سريالنكا بنقول فيه كل حاجة موجودة فالبلد دي، تقدروا تلاقوه
-                      <a href="" style="color: blue" class="tt-link">هنا</a>
+                      سريالنكا بنقول فيه كل حاجة موجودة فالبلد دي
                     </p>
 
                     <!-- Begin post image -->
-                    <figure class="tt-blog-post-image">
-                      <a
-                        href="assets/img/blog/single/blog-post-1.jpg"
-                        class="tt-bpi-link lg-trigger"
-                        data-exthumbnail="assets/img/blog/single/thumb/img-4.jpg"
-                        data-cursor="View"
-                      >
-                        <img
-                          class="tt-lazy"
-                          src="assets/img/low-qlt-thumb.jpg"
-                          data-src="assets/img/blog/single/blog-post-1.jpg"
-                          alt="image"
-                        />
-                      </a>
-                    </figure>
+                    <div class="tt-image lightgallery tti-fixed-height">
+						<a href="" class="lg-trigger" data-cursor="Play" data-html="
+							<video class='lg-video-object lg-html5' controls playsinline preload='auto'>
+								<source src='assets/vids/fashion-shoot.mp4' type='video/mp4'>
+								<source src='assets/vids/fashion-shoot.webm' type='video/webm'>
+							</video>">
+
+							<figure class="cover-opacity-2">
+								<img class="anim-image-parallax tt-lazy" src="assets/img/Seri Lanka.jpg" data-src="assets/img/Seri Lanka.jpg" alt="image">
+								<!-- <figcaption>
+									Image Caption
+								</figcaption> -->
+							</figure>
+
+							<!-- Play button for mobile devices only -->
+							<div class="align-center z-index-2 hide-to-mobile">
+								<div class="tt-btn tt-btn-light tt-btn-round anim-fadeinup">
+									<div data-hover="Play">Play</div> <!-- Use short text only! -->
+								</div>
+							</div>
+						</a>
+					</div>
                     <!-- End post image -->
                     <p class="text-xlg">
                       بعد ماتتفرج على بلاد كتير هتكون حددت كذا بلد هم اللى عجبوك
@@ -514,9 +528,7 @@
                     <p>
                       دوشة.. دوشة كتييييييير، أوراق وتقديمات وحجز معاد فى
                       السفارة وأحيانًا انترڤيو كمان! طبعًا احيانًا كتير ناس
-                      بتقدر تاخد تأشيرة اوروبا عادى، ولو احتجت أي مساعدة تقدر
-                      تبص على قسم التأشيرات بتاعنا من هنا* وهتلاقى حاجات كتير
-                      تساعدك تستخرج التأشيرات الصعبة دي، بس لو عايز تخلص من كل
+                      بتقدر تاخد تأشيرة اوروبا عادى ، بس لو عايز تخلص من كل
                       ده، وتسافر من غير ولا ورقة، ومن غير مايبقى عندك حساب
                       فالبنك اصلًا؟ سهلة والله
                     </p>
@@ -678,10 +690,9 @@
                     </p>
                     <p>
                       آه، بالبساطة دي!!<br>
-                      يعنى باسبورك هيكون كافى عشان تسافر البلاد دي، وبالمناسبة
-                      تقدر تعرف كل الورق المطلوب لاستخراج الباسبورمن هنا* وبرضه
+                      يعنى باسبورك هيكون كافى عشان تسافر البلاد دي، وبرضه
                       ماتنساش إذن الجيش والتصريح الأمني، دول ببّطلبوا فى حالات
-                      معيّنة وسهل جدًا تستخرجهم وتقدر تعرف تفاصيلهم من هنا*
+                      معيّنة وسهل جدًا تستخرجهم 
                       <b>
                         طيب هل الدول دي فقيرة يعنى أو مش سياحية أو وحشة عشان كدا
                         اجرائتهم سهلة؟
@@ -849,7 +860,7 @@
 						</li>
 						
 					</ul>
-					<p>كدة انت عرفت كل حاجة تخص التأشيرات، بين الدول السهلة او المتوسطة او الصعبة، ولو عايز تريّح دماغك روح للدول السهلة، وتقدر تعرف تأشيرة كل بلد بالتفصيل لو دخلت على قسم التأشيرات من هنا* وبعد ماتستخرج التأشيرة هايبقى كل اللى مطلوب منك انك تحجز تذكرة الطيران وتسافر.</p>
+					<p>كدة انت عرفت كل حاجة تخص التأشيرات، بين الدول السهلة او المتوسطة او الصعبة، ولو عايز تريّح دماغك روح للدول السهلة، وبعد ماتستخرج التأشيرة هايبقى كل اللى مطلوب منك انك تحجز تذكرة الطيران وتسافر.</p>
 					<h3>تذكرة الطيران!
 					</h3>
 					<p class="text-lg">						تذاكر الطيران والإقامة دول هم المحور التانى بعد ما عرفنا كل حاجة تخص الڤيزا.
@@ -862,7 +873,7 @@
 						<b>وكمان هحجز الفنادق ازاى؟! 
 
 						</b><br>
-						كل حاجة تخص تذكرة الطيران والإقامة هتلاقوها فالجزء التانى من هنا.
+						كل حاجة تخص تذكرة الطيران والإقامة هتلاقوها فالجزء التانى .
 
 					</p>
 					</div>
