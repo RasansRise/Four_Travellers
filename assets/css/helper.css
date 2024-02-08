@@ -279,7 +279,6 @@ p.text-xlg {
 
 .text-xxlg {
 	font-size: calc(100% + 0.7vw) !important;
-	text-align: right;
 }
 .text-xxlg p,
 p.text-xxlg {
